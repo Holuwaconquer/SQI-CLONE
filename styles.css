@@ -30,6 +30,10 @@ body{
     padding: 0 15px;
     font-size: 14px;
 }
+.list-item i{
+    color: var(--primary-color);
+
+}
 .showcase{
     padding: 2% 10%;
     background: linear-gradient(31deg, #ffffff 0%, #fffdf2 99%), url(./assets/bg.jpg);
@@ -338,4 +342,28 @@ body{
 .news-card img{
     width: 100%;
     cursor: pointer;
+}
+.contact{
+    padding: 5% 10%;
+    background-color: white;
+}
+.contact a{
+    text-decoration: none;
+}
+.contact ul{
+    padding: 0;
+}
+.contact ul li{
+    list-style-type: none;
+    padding: 10px 0;
+}
+.contact ul li a{
+    color: black;
+}
+.footer{
+    padding: 10px 10%;
+    background-color: var(--bg-color);
+    color: white;
+    display: flex;
+    align-items: center;
 }
