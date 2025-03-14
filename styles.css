@@ -1,0 +1,305 @@
+*{
+    font-family: "Poppins", sans-serif;
+}
+body{
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+:root{
+    --primary-color: #00208A;
+    --title-color: #050754;
+    --link-color: #26364e;
+    --text-color: #666666;
+    --divider-color: #2ea3f2;
+    --SE-color: rgba(136, 196, 221, 0.35);
+    --data-color: #eeefbd;
+    --ui-color: #e0d5c0;
+    --digital-color: #dfd5e8;
+    --faq-color: #d39b00;
+    --bg-color: #090326;
+}
+.nav-bar{
+    border-bottom: 1px solid rgb(228, 226, 226);
+    background-color: #fff;
+    z-index: 1;
+}
+.list-item a{
+    color: var(--primary-color);
+    font-weight: 600;
+    text-decoration: none;
+    padding: 0 15px;
+    font-size: 14px;
+}
+.showcase{
+    padding: 2% 10%;
+    background: linear-gradient(31deg, #ffffff 0%, #fffdf2 99%), url(./assets/bg.jpg);
+}
+.showcase-content h1{
+    color: var(--title-color);
+    font-size: 4.5em;
+    line-height: 1em;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+.showcase-content p{
+    color: var(--text-color);
+    margin-bottom: 50px;
+}
+.showcase-content a{
+    color: #fff;
+    background-color: var(--primary-color);
+    padding: 15px 25px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.start-here{
+    padding: 0 10%;
+}
+.start-here img{
+    filter: grayscale();
+    margin-bottom: 30px;
+}
+.start-here-title h1{
+    color: var(--title-color);
+    font-weight: bold;
+    margin-top: 20px;
+}
+.start-here h2{
+    color: var(--title-color);
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.start-here p{
+    color: var(--text-color);
+    margin-bottom: 30px;
+}
+.start-here a{
+    text-decoration: none;
+    color: var(--title-color);
+    position: relative;
+}
+.start-here a::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    background-color: var(--title-color);
+}
+.start-here-course{
+    margin-top: 100px;
+}
+.start-here-course h2{
+    font-size: 18px;
+    color: #26364e;
+}
+.courses-content .courses-content-info{
+    border-bottom: 1px solid var(--divider-color);
+}
+.courses-content .courses-content-info:last-child{
+    border-bottom: none;
+}
+.top-courses{
+    padding: 2% 10%;
+}
+.top-courses img{
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+.top-courses h2{
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+.top-courses p{
+    font-weight: 500;
+    font-size: 14px;
+}
+.top-courses a{
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 14px;
+}
+.se-section{
+    background-color: var(--SE-color);
+    box-shadow: 0px 60px 80px 0px rgba(0, 135, 28, 0.2);
+}
+.data-section{
+    background-color: var(--data-color);
+    box-shadow: 0px 60px 80px 0px rgba(254, 139, 119, 0.3);
+}
+.ui-section{
+    background-color: var(--ui-color);
+    box-shadow: 0px 60px 80px 0px rgba(0, 135, 28, 0.2);
+}
+.digital-section{
+    background-color: var(--digital-color);
+    box-shadow: 0px 60px 80px 0px rgba(254, 139, 119, 0.3);
+}
+.alumni-section{
+    padding: 2% 10%;
+}
+.alumni-section img{
+    width: 70%;
+}
+.alumni-section h2{
+    font-weight: 700;
+    font-size: 25px;
+}
+.take-tour{
+    background: linear-gradient(120deg, rgba(0, 4, 66, 0) 0%, #000442 70%), url(./assets/DSC_9054-scaled.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 8% 10%;
+    color: #fff;
+}
+.take-tour h1{
+    font-weight: bold;
+    font-size: 3em;
+}
+.take-tour p{
+    margin-bottom: 50px;
+}
+.take-tour a{
+    color: #fff;
+    background-color: var(--primary-color);
+    padding: 15px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+}
+.testimonials{
+    padding: 5% 10%;
+}
+.rateus-img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: url(./assets/rateus.jpg) center center no-repeat;
+    background-size: cover;
+}
+.rate-us h4{
+    color: orange;
+}
+.rate-us a{
+    background-color: blue;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 30px;
+    text-decoration: none;
+}
+.review-1{
+    height: 200px;
+    max-width: 450px;
+    overflow-y: scroll;
+    margin-right: 20px;
+}
+.review-content{
+    /* height: 200px;
+    overflow-y: scroll; */
+    font-size: 14px;
+}
+.review-icon{
+    color: orange;
+}
+.carousel-indicators button{
+    background-color: #33b5ff !important;
+}
+.carousel-indicators button .active{
+    background-color: blue !important;
+}
+.why-sqi{
+    padding: 5% 10%;
+}
+.conference{
+    height: 100%;
+    background: url(./assets/conference_image_15.jpg) center center no-repeat;
+    background-size: cover;
+}
+.why-sqi h1{
+    font-weight: 700;
+}
+.why-sqi i{
+    margin-bottom: 25px;
+    font-size: 2.5em !important;
+}
+.why-sqi h4{
+    font-size: 1.3em;
+}
+.why-sqi p{
+    font-size: 14px;
+}
+.faq{
+    background-color: var(--bg-color);
+    color: white;
+    padding: 10% 10%;
+}
+.accordion{
+    background-color: transparent !important;
+}
+.faq-body{
+    color: white !important;
+    background-color: var(--bg-color) !important;
+}
+.accordion-item h4{
+    border: none !important;
+    font-size: 1.3em;
+}
+.accordion-item{
+    border: none !important;
+}
+.accordion{
+    border: none !important;
+}
+.accordion-item p{
+    cursor: pointer;
+    font-size: 1em !important;
+    color: var(--faq-color) !important;
+    font-weight: 500 !important;
+    padding: 10px 0 !important;
+    background-color: var(--bg-color) !important;
+    border-bottom: none !important;
+    border: 0px !important;
+}
+.faq-title a{
+    color: var(--faq-color);
+    text-decoration: none;
+    font-size: 1.5em;
+    position: relative;
+}
+.faq-title a::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    background-color: var(--faq-color);
+}
+.get-started{
+    background-color: var(--title-color);
+    color: white;
+    padding: 7% 10%;
+}
+.get-started h1{
+    font-size: 3em;
+    font-weight: bold;
+    padding: 10px 0 20px;
+}
+.get-started a{
+    text-decoration: none;
+    color: white;
+}
+.get-started .join-today{
+    color: #fff;
+    background-color: var(--primary-color);
+    padding: 20px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+}
